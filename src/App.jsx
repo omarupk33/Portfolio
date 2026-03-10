@@ -1,10 +1,11 @@
 import React from 'react'
+import Navbar from './component/Navbar'
 
-const App = () => {
+const App = (props) => {
   return (
     <div>
-      <h1 className='uppercase text-8xl text-center text-amber-700 mt-10'>Portfolio</h1>
-      <h2 className='uppercase text-center mt-10 text-5xl text-blue-500'>- Omer & Rayyan -</h2>
+      <Navbar />
+      <h2 className='uppercase text-center mt-10 text-5xl text-blue-500'>- {props.Name1} & {props.Name2} -</h2>
     </div>
   )
 }
