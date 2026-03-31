@@ -2,7 +2,7 @@ function NavBar() {
   const items = ['Home', 'Profile', 'Support', 'Skills']
 
   return (
-    <div id="navBar">
+    <div className="navBar">
       <ol>
         {items.map((item, index) => (
           <li key={index} className={item}>

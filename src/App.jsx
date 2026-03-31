@@ -1,11 +1,17 @@
-import Card from "./Card"
-
+import Footer from './Footer'
+import NavBar from './navBar'
+import Header from './Header'
+import Center from './Center'
 function App() {
-  <>
-  <Card></Card>
+  return <>
+  <NavBar></NavBar>
+  <div className="mainDiv">
+    <Header></Header>
+    <Center>
+    </Center>
+    <Footer></Footer>
+  </div>
   </>
-
-
 }
 
 export default App
