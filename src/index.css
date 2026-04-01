@@ -1,12 +1,12 @@
 :root{
   background-color: black;
   color: white;
+
 }
 
 #root{
   display: flex;
-  height: 100vh;
-  width: auto;
+  height: 98vh;
 }
 
 .navBar{
@@ -22,19 +22,32 @@
 }
 
 
+.header{
+  display: flex;
+}
+
+
 .mainDiv{
   display: flex;
+  flex: 1 1 100%;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 
 
-.card{
-  background-color: beige;
+.mainDiv> :nth-child(1){
+  background-color: green;
 }
 
-.footer{
-  background-color: brown;
+.mainDiv> :nth-child(2){
+  background-color: thistle;
+
 }
+
+.mainDiv> :nth-child(3){
+  background-color: burlywood;
+}
+
+
