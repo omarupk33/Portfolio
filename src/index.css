@@ -1,7 +1,6 @@
 :root{
   background-color: black;
   color: white;
-
 }
 
 #root{
@@ -9,21 +8,29 @@
   height: 98vh;
 }
 
-.navBar{
-  background-color: red;
-  width: 200px;
-  font-size: larger;
+.header{
   display: flex;
-}
-.navBar ol{
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
 }
 
 
-.header{
+.center{
+  overflow-x: scroll;
   display: flex;
+  flex:2;
+ justify-content: center;
+ align-content: center;
+
+}
+
+.center > div {
+  border: 1px solid palevioletred;
+  justify-items: center;
+  align-content: center;
+}
+
+.center > div > p{
+  line-break:5px;
 }
 
 
@@ -32,10 +39,7 @@
   flex: 1 1 100%;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
 }
-
-
 
 .mainDiv> :nth-child(1){
   background-color: green;
@@ -51,3 +55,25 @@
 }
 
 
+img{
+  border: solid 10px blueviolet;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+
+.navBar{
+  background-color: red;
+  width: 200px;
+  font-size: larger;
+  display: flex;
+}
+.navBar ol{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
