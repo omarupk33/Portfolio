@@ -29,13 +29,13 @@ function Footer(){
                 </h2>
             <ul>
                 <li>
-                Gmail:ffomar060@gmail.com
+                Gmail: rayyanameer80@gmail.com
                 </li>
                 <li>
-                LinkedIn: Omarupk
+                LinkedIn: <a href="https://www.linkedin.com/in/rayyan-ameer-28b281330/">Rayyan Ameer</a>
                 </li>
                 <li>
-                Instagram: Omarupk
+                Instagram: Rayyan01
                 </li>
             </ul>
             </div>
