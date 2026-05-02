@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useRef } from "react";
+import CardText from "./CardText";
 
 const Card = () => {
   const omarRef = useRef();
@@ -40,15 +41,16 @@ const Card = () => {
         {/* Omar */}
         <div
           ref={omarRef}
-          className="absolute bg-amber-500 w-[45%] h-15 text-white text-5xl text-center uppercase will-change-transform z-10"
+          className="absolute bg-amber-500 w-[45%] h-15 text-white text-5xl text-center uppercase will-change-transform z-20"
         >
           Omar
         </div>
+        
 
         {/* Rayyan */}
         <div
           ref={rayyanRef}
-          className="bg-red-500 w-[45%] h-15 text-white text-5xl text-center uppercase will-change-transform"
+          className="bg-red-500 w-[45%] h-15 text-white text-5xl text-center uppercase will-change-transform z-10"
         >
           Rayyan
         </div>
