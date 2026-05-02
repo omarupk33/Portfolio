@@ -1,16 +1,13 @@
-import Footer from './Footer'
-import NavBar from './navBar'
-import Header from './Header'
-import Center from './Center'
+import Card from './component/Card'
+import CardText from './component/CardText'
+import NavBar from './component/navBar'
 function App(){
   return <>
-  <div className="mainDiv">
-    <Header></Header>
-    <Center>
-    </Center>
-    <Footer></Footer>
+  <div>
+    <NavBar/>
+    <Card/>
+    <CardText/>
   </div>
-  <NavBar></NavBar>
   </>
 }
 

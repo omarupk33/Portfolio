@@ -1,80 +1,35 @@
-:root{
-  background-color: black;
-  color: white;
+@import "tailwindcss";
+
+body{
+  background-color: #000000;
 }
 
-#root{
-  display: flex;
-  height: 98vh;
+.margin{
+  margin-top: 20px;
 }
 
-.header{
-  display: flex;
-  justify-content: space-around;
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
-
-.center{
-  overflow-x: scroll;
-  display: flex;
-  flex:2;
- justify-content: center;
- align-content: center;
-
+.slide-left {
+  animation: slideRight 1s ease-in-out forwards;
 }
 
-.center > div {
-  border: 1px solid palevioletred;
-  justify-items: center;
-  align-content: center;
+@keyframes slideLeft {
+  0% {
+    transform: -translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
-.center > div > p{
-  line-break:5px;
-}
-
-
-.mainDiv{
-  display: flex;
-  flex: 1 1 100%;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.mainDiv> :nth-child(1){
-  background-color: green;
-}
-
-.mainDiv> :nth-child(2){
-  background-color: thistle;
-
-}
-
-.mainDiv> :nth-child(3){
-  background-color: burlywood;
-}
-
-
-img{
-  border: solid 10px blueviolet;
-  border-radius: 50px;
-  height: 100px;
-  width: 100px;
-  padding: 20px;
-  margin: 20px;
-}
-
-
-
-.navBar{
-  background-color: red;
-  width: 200px;
-  font-size: larger;
-  display: flex;
-}
-
-.navBar ol{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.slide-left {
+  animation: slideLeft 1s ease-in-out forwards;
 }
