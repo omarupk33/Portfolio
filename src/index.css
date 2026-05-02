@@ -72,6 +72,7 @@ img{
   font-size: larger;
   display: flex;
 }
+
 .navBar ol{
   display: flex;
   flex-direction: column;
