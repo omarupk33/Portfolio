@@ -21,50 +21,61 @@ const CardText = () => {
     });
   }, []);
 
+  useGSAP(() => {
+    gsap.from('.iconDrop', {
+      y: -100,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.15,
+      delay: 1.5,
+      ease: "power3.out",
+    });
+  }, []);
+
   return (
     <div ref={cardText} className='absolute top-40 left-0 w-full z-0'>
       
       <div className='flex justify-between m-10'>
 
         {/* LEFT SIDE */}
-        <div className='w-[40%] flex items-center gap-6'>
+        <div className='w-[40%] flex items-center justify-between gap-6'>
 
           <img 
-            src={reactIcon} 
-            className="w-28 h-40 object-contain" 
+            src={reactIcon}
+            className="iconDrop w-28 h-40 object-contain" 
             alt="React"
           />
 
           <img 
             src={tailwind} 
-            className="w-28 h-20 object-contain" 
+            className="iconDrop w-28 h-20 object-contain" 
             alt="Tailwind"
           />
 
           <img 
             src={csharp} 
-            className="w-28 h-20 object-contain" 
+            className="iconDrop w-28 h-20 object-contain" 
             alt="Tailwind"
           />
         </div>
 
         {/* RIGHT SIDE */}
-        <div className='w-[40%] flex items-center gap-6'>
+        <div className='w-[40%] flex items-center justify-between gap-6'>
           <img 
             src={python} 
-            className="w-28 h-20 object-contain" 
+            className="iconDrop w-28 h-20 object-contain" 
             alt="Tailwind"
           />
 
         <img 
             src={javascript} 
-            className="w-28 h-20 object-contain" 
+            className="iconDrop w-28 h-20 object-contain" 
             alt="Tailwind"
           />
 
         <img 
             src={reactIcon} 
-            className="w-28 h-20 object-contain" 
+            className="iconDrop w-28 h-20 object-contain" 
             alt="Tailwind"
           />
 
