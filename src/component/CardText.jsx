@@ -6,6 +6,8 @@ import tailwind from '../assets/pngwing.png';
 import csharp from '../assets/seecharp.com.png';
 import python from '../assets/python.png';
 import javascript from '../assets/javascript.png';
+import eagle from '../assets/eagle.png';
+import lion from '../assets/lion.png';
 
 const CardText = () => {
 
@@ -57,6 +59,11 @@ const CardText = () => {
             className="iconDrop w-28 h-20 object-contain" 
             alt="Tailwind"
           />
+          <img src={lion}
+          className='w-1/3 -z-1 absolute left-2 top-2 blur-sm'
+          
+          alt="Lion"
+          />
         </div>
 
         {/* RIGHT SIDE */}
@@ -77,6 +84,13 @@ const CardText = () => {
             src={reactIcon} 
             className="iconDrop w-28 h-20 object-contain" 
             alt="Tailwind"
+          />
+        
+        <img src={eagle}
+          className=' -z-1  absolute'                                                 
+          className='w-1/3 -z-1 absolute right-2 top-2 blur-sm'
+
+         alt="Eagle"
           />
 
         </div>

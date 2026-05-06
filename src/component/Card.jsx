@@ -41,7 +41,7 @@ const Card = () => {
         {/* Omar */}
         <div
           ref={omarRef}
-          className="absolute bg-amber-500 w-[45%] h-15 text-white text-5xl text-center uppercase will-change-transform z-20"
+          className="absolute bg-blue-500 w-[45%] h-15 text-white text-5xl text-center uppercase will-change-transform z-20"
         >
           Omar
         </div>
@@ -50,7 +50,7 @@ const Card = () => {
         {/* Rayyan */}
         <div
           ref={rayyanRef}
-          className="bg-red-500 w-[45%] h-15 text-white text-5xl text-center uppercase will-change-transform z-10"
+          className="bg-amber-500 w-[45%] h-15 text-white text-5xl text-center uppercase will-change-transform z-10 "
         >
           Rayyan
         </div>
