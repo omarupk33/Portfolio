@@ -6,6 +6,8 @@ import tailwind from '../assets/pngwing.png';
 import csharp from '../assets/seecharp.com.png';
 import python from '../assets/python.png';
 import javascript from '../assets/javascript.png';
+import eagle from '../assets/eagle.png';
+import lion from '../assets/lion.png';
 
 const CardText = () => {
 
@@ -35,7 +37,7 @@ const CardText = () => {
   return (
     <div ref={cardText} className='absolute top-40 left-0 w-full z-0'>
       
-      <div className='flex justify-between m-10'>
+      <div className='flex justify-between mx-10'>
 
         {/* LEFT SIDE */}
         <div className='w-[40%] flex items-center justify-between gap-6'>
@@ -63,7 +65,7 @@ const CardText = () => {
         <div className='w-[40%] flex items-center justify-between gap-6'>
           <img 
             src={python} 
-            className="iconDrop w-28 h-20 object-contain" 
+            className="iconDrop w-28 h-20 object-contain pointer" 
             alt="Tailwind"
           />
 
@@ -78,9 +80,18 @@ const CardText = () => {
             className="iconDrop w-28 h-20 object-contain" 
             alt="Tailwind"
           />
-
         </div>
-
+        {/* background images */}
+        <div className='absolute w-[80%] flex justify-between mx-20'>
+          <img src={lion}                                                 
+          className='w-[55vh] blur-sm -z-1'
+          alt="Eagle"
+          />
+          <img src={eagle}
+          className='w-[60vh] blur-sm -z-1'
+          alt="Lion"
+          />
+        </div>
       </div>
     </div>
   );
