@@ -82,7 +82,6 @@ const CardText = () => {
         </div>
 
       </div>
-
     </div>
   );
 };
