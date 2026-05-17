@@ -4,7 +4,7 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative bg-black-500 text-white shadow-md z-10">
+    <nav className="relative bg-purple-500 text-white shadow-md z-10">
       <div className="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
         
         {/* Logo */}

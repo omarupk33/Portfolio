@@ -34,61 +34,81 @@ const CardText = () => {
     });
   }, []);
 
+    const handleClick = (e) => {
+    e.preventDefault();
+     
+    console.log('Replace later with some functionality');
+  };
+
+
   return (
     <div ref={cardText} className='absolute top-40 left-0 w-full z-0'>
       
       <div className='flex justify-between mx-10'>
 
         {/* LEFT SIDE */}
-        <div className='w-[40%] flex items-center justify-between gap-6'>
+        <div className='w-[40%] flex items-center justify-between gap-6 z-10'>
 
+          <a href="ex" className="hover:brightness-75" onClick={handleClick}>
           <img 
             src={reactIcon}
             className="iconDrop w-28 h-40 object-contain" 
             alt="React"
           />
+          </a>
 
+          <a href="ex" className="hover:brightness-75" onClick={handleClick}>
           <img 
             src={tailwind} 
             className="iconDrop w-28 h-20 object-contain" 
             alt="Tailwind"
           />
+          </a>
 
+          <a href="ex" className="hover:brightness-75" onClick={handleClick}>
           <img 
             src={csharp} 
             className="iconDrop w-28 h-20 object-contain" 
-            alt="Tailwind"
+            alt="CSharp"
           />
+          </a>
         </div>
 
         {/* RIGHT SIDE */}
-        <div className='w-[40%] flex items-center justify-between gap-6'>
+        <div className='w-[40%] flex items-center justify-between gap-6 z-10'>
+          <a href="ex" className="hover:brightness-75" onClick={handleClick}>
           <img 
             src={python} 
             className="iconDrop w-28 h-20 object-contain pointer" 
-            alt="Tailwind"
+            alt="Python"
           />
+          </a>
 
+        <a href="ex" className="hover:brightness-75" onClick={handleClick}>
         <img 
             src={javascript} 
             className="iconDrop w-28 h-20 object-contain" 
-            alt="Tailwind"
+            alt="JavaScript"
           />
-
+        </a>
+        
+        <a href="ex" className="hover:brightness-75" onClick={handleClick}>
         <img 
             src={reactIcon} 
             className="iconDrop w-28 h-20 object-contain" 
-            alt="Tailwind"
+            alt="React"
           />
+          </a>
+
         </div>
         {/* background images */}
         <div className='absolute w-[80%] flex justify-between mx-20'>
           <img src={lion}                                                 
-          className='w-[55vh] blur-sm -z-1'
+          className='w-[55vh] blur-sm -z-10'
           alt="Eagle"
           />
           <img src={eagle}
-          className='w-[60vh] blur-sm -z-1'
+          className='w-[60vh] blur-sm -z-10'
           alt="Lion"
           />
         </div>

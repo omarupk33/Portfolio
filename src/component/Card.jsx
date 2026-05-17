@@ -3,6 +3,7 @@ import gsap from "gsap";
 import React, { useRef } from "react";
 import CardText from "./CardText";
 
+
 const Card = () => {
   const omarRef = useRef();
   const rayyanRef = useRef();
@@ -34,6 +35,13 @@ const Card = () => {
     );
   });
 
+  // Prevents the default behavior of a
+    const handleClick = (e) => {
+    e.preventDefault();
+
+    console.log('Replace later with some functionality');
+  };
+
   return (
     <div className="h-full w-full">
       <div className="relative mt-5 m-3 overflow-hidden flex">
@@ -43,7 +51,7 @@ const Card = () => {
           ref={omarRef}
           className="absolute bg-blue-500 w-[45%] h-15 text-white text-5xl text-center uppercase will-change-transform z-20"
         >
-          Omar
+        <a href="ex" className="hover:text-blue-700 scale-50" onClick={handleClick} >Omar</a>
         </div>
         
 
@@ -52,7 +60,7 @@ const Card = () => {
           ref={rayyanRef}
           className="bg-amber-500 w-[45%] h-15 text-white text-5xl text-center uppercase will-change-transform z-10 "
         >
-          Rayyan
+          <a href="ex" className="hover:text-orange-700" onClick={handleClick} >Rayyan</a>
         </div>
 
       </div>
